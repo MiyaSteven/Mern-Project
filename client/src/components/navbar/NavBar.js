@@ -11,13 +11,13 @@ const NavBar = (props) => {
         <header>
             <div class="topnav">
                 <div>
-                    <Link to="/users"><h2>Create User</h2></Link>
+                    <Link to="/users/create"><h2>Create User</h2></Link>
                 </div>
                 <div>
                     <Link to="/"><h2>Dashboard</h2></Link>
                 </div>
                 <div>
-                    <Link to={`/users/${id}`}><h2>Profile</h2></Link>
+                    <Link to={`/users/1`}><h2>Profile</h2></Link>
                 </div>
             </div>
         </header>

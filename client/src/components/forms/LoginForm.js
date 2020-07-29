@@ -1,22 +1,24 @@
 import React from 'react';
-import Opps from '../select/Opps';
-// import 'form.css';
+import FormHead from '../select/FormHead';
+import { TheForm, FillLabel, FormGroup, MainInput, RoundedBtn } from './Styles';
 
 const LoginForm = (props) => {
 
     return (
         <div>
-            <Opps/>
-            <form>
-                <div>
-                    <label htmlFor="">Email</label>
-                    <input type="email"/>
-                </div>
-                <div>
-                    <label htmlFor="">Password</label>
-                    <input type="password"/>
-                </div>
-            </form>
+            <FormHead/>
+            <TheForm>
+                <h3>Sign In</h3>
+                <FormGroup>
+                    <FillLabel htmlFor="">Email</FillLabel>
+                    <MainInput type="email"/>
+                </FormGroup>
+                <FormGroup>
+                    <FillLabel htmlFor="">Password</FillLabel>
+                    <MainInput type="password"/>
+                </FormGroup>
+                <RoundedBtn type="submit">Login</RoundedBtn>
+            </TheForm>
         </div>
     )
 }

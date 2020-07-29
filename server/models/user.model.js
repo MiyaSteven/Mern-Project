@@ -1,10 +1,15 @@
 const mongoose = require("mongoose");
 const { urlencoded } = require("express");
+const bcrypt = require("bcrypt");
 
 const defaultRequiredOptions = [true, "{PATH} is required."];
 
 const UserSchema = new mongoose.Schema(
   {
+    accountType: {
+      type: String,
+      required: [true, "You must select Personal or Business Account"],
+    },
     firstName: {
       type: String,
       required: defaultRequiredOptions,
@@ -18,18 +23,17 @@ const UserSchema = new mongoose.Schema(
     company: {
       type: String,
     },
-    // validate function https://mongoosejs.com/docs/api.html#schematype_SchemaType-validate
     phoneNumber: {
       type: Number,
       required: defaultRequiredOptions,
       minlength: [10, "{PATH} must be at least {MINLENGTH} characters."],
     },
-    // validate email https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
     email: {
       type: String,
-      required: true,
-      lowercase: true,
-      unique: true,
+      validate: {
+        validator: (val) => /^([\w-\.]+@([\w-]+\.)+[\w-]+)?$/.test(val),
+        message: "Please enter a valid email",
+      },
     },
     location: {
       type: String,
@@ -38,13 +42,29 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    confirmPassword: {
-      type: String,
-      required: true,
-    },
   },
   { timestamps: true }
 );
+
+// Pre
+UserSchema.pre("validate", function (next) {
+  if (this.password !== this.confirmPassword) {
+    this.invalidate("confirmPassword", "Password must match confirm password");
+  }
+  next();
+});
+
+UserSchema.pre("save", function (next) {
+  bcrypt.hash(this.password, 10).then((hash) => {
+    this.password = hash;
+    next();
+  });
+});
+
+// Virtuals
+UserSchema.virtual("confirmPassword")
+  .get(() => this._confirmPassword)
+  .set((value) => (this._confirmPassword = value));
 
 const User = mongoose.model("User", UserSchema);
 

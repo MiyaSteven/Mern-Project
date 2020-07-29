@@ -2,8 +2,16 @@
     max-width: 200px;
     max-height: 300px;
 }
-
-.profile a{
+.profile .troll{
+    font-weight: 600;
+    color: blue;
+    text-decoration: none;
+    transition: .5s;
+}
+.profile .troll:hover{
+    color: rgb(0, 255, 76);
+}
+.profile .bro{
     text-decoration: none;
     background-color: rgb(188, 31, 228);
     color: white;
@@ -13,7 +21,7 @@
     transition: 1s;
 }
 
-.profile a:hover{
+.profile .bro:hover{
     color:rgb(188, 31, 228);
     background-color: white;
     border: 1px solid rgb(188, 31, 228);

@@ -1,5 +1,6 @@
 import React from 'react';
 import DashHead from '../select/DashHead';
+import {Link} from '@reach/router';
 import './ops.css';
 
 const Users = (props) => {
@@ -15,52 +16,52 @@ const Users = (props) => {
                     <th>Readiness</th>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
                     <td>React, Javascript, Html, css, Python, Node.js, AWS</td>
                     <td>Ready</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
                     <td>React, Javascript, Html, css, Python, Node.js, AWS</td>
                     <td>Ready</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
                     <td>React, Javascript, Html, css, Python, Node.js, AWS</td>
                     <td>Ready</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
                     <td>React, Javascript, Html, css, Python, Node.js, AWS</td>
                     <td>Ready</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
                     <td>React, Javascript, Html, css, Python, Node.js, AWS</td>
                     <td>Ready</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
                     <td>React, Javascript, Html, css, Python, Node.js, AWS</td>
                     <td>Ready</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
                     <td>React, Javascript, Html, css, Python, Node.js, AWS</td>
                     <td>Ready</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
                     <td>React, Javascript, Html, css, Python, Node.js, AWS</td>
                     <td>Ready</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
                     <td>React, Javascript, Html, css, Python, Node.js, AWS</td>
                     <td>Ready</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
                     <td>React, Javascript, Html, css, Python, Node.js, AWS</td>
                     <td>Ready</td>
                 </tr>

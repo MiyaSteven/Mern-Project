@@ -1,5 +1,6 @@
 import React from 'react';
 import DashHead from '../select/DashHead';
+import {Link} from '@reach/router';
 import './ops.css';
 
 const Collaborate = (props) => {
@@ -15,53 +16,53 @@ const Collaborate = (props) => {
                     <th>Short Description</th>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
             </table>

@@ -1,4 +1,4 @@
-.theTable {
+.theTable{
   justify-content: center;
 }
 .ops {
@@ -15,7 +15,7 @@
   padding: 8px;
 }
 
-.ops tr:nth-child(even) {
+.ops tr:nth-child(even){
   background-color: #f2f2f2;
 }
 

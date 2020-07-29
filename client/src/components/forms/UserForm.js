@@ -22,6 +22,7 @@ const UserForm = (props) => {
       lastName,
       phoneNumber,
       email,
+      location,
       password,
       confirmPassword,
     };

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Opps from "../select/Opps";
 import { navigate } from "@reach/router";
-// import 'form.css';
+import FormHead from '../select/FormHead';
+import { TheForm, FillLabel, FormGroup, MainInput, RoundedBtn } from './Styles';
 
 const BusinessForm = (props) => {
   const [firstName, setFirstName] = useState("");
@@ -40,94 +40,94 @@ const BusinessForm = (props) => {
 
   return (
     <div>
-      <Opps />
-      <form
+      <FormHead />
+      <TheForm
         onSubmit={(e) => {
           handleSubmit(e);
         }}
       >
-        <div>
-          <label htmlFor="">First Name</label>
-          <input
+        <FormGroup>
+          <FillLabel htmlFor="">First Name</FillLabel>
+          <MainInput
             onChange={(e) => {
               setFirstName(e.target.value);
             }}
             type="text"
             value={firstName}
           />{" "}
-        </div>
-        <div>
-          <label htmlFor="">Last Name</label>
-          <input
+        </FormGroup>
+        <FormGroup>
+          <FillLabel htmlFor="">Last Name</FillLabel>
+          <MainInput
             onChange={(e) => {
               setLastName(e.target.value);
             }}
             type="text"
             value={lastName}
           />{" "}
-        </div>
-        <div>
-          <label htmlFor="">Company:</label>
-          <input
+        </FormGroup>
+        <FormGroup>
+          <FillLabel htmlFor="">Company:</FillLabel>
+          <MainInput
             onChange={(e) => {
               setCompany(e.target.value);
             }}
             type="text"
             value={company}
           />{" "}
-        </div>
-        <div>
-          <label htmlFor="">Phone Number</label>
-          <input
+        </FormGroup>
+        <FormGroup>
+          <FillLabel htmlFor="">Phone Number</FillLabel>
+          <MainInput
             onChange={(e) => {
               setPhoneNumber(e.target.value);
             }}
             type="number"
             value={phoneNumber}
           />{" "}
-        </div>
-        <div>
-          <label htmlFor="">Email</label>
-          <input
+        </FormGroup>
+        <FormGroup>
+          <FillLabel htmlFor="">Email</FillLabel>
+          <MainInput
             onChange={(e) => {
               setEmail(e.target.value);
             }}
             type="email"
             value={email}
           />{" "}
-        </div>
-        <div>
-          <label htmlFor="">Location</label>
-          <input
+        </FormGroup>
+        <FormGroup>
+          <FillLabel htmlFor="">Location</FillLabel>
+          <MainInput
             onChange={(e) => {
               setLocation(e.target.value);
             }}
             type="text"
             value={location}
           />{" "}
-        </div>
-        <div>
-          <label htmlFor="">Password</label>
-          <input
+        </FormGroup>
+        <FormGroup>
+          <FillLabel htmlFor="">Password</FillLabel>
+          <MainInput
             onChange={(e) => {
               setPassword(e.target.value);
             }}
             type="password"
             value={password}
           />{" "}
-        </div>
-        <div>
-          <label htmlFor="">Confirm Password</label>
-          <input
+        </FormGroup>
+        <FormGroup>
+          <FillLabel htmlFor="">Confirm Password</FillLabel>
+          <MainInput
             onChange={(e) => {
               setConfirmPassword(e.target.value);
             }}
             type="password"
             value={confirmPassword}
           />{" "}
-        </div>
-        <button>Add Member</button>
-      </form>
+        </FormGroup>
+        <RoundedBtn>Add Member</RoundedBtn>
+      </TheForm>
     </div>
   );
 };

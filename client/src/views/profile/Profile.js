@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './profile.css';
 import { Link } from '@reach/router';
 import ReviewForm from '../../components/forms/ReviewForm';
+import axios from 'axios';
 
 const Profile = (props) => {
+
+    const [user, setUser] =useState({});
+
+    useEffect(() => {
+        axios.get(`http:localhost:8000/api/users/${props.id}`)
+        .then(res => setUser(res.data))
+    })
 
     return (
         <div className="profile">

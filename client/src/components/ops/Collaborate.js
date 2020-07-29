@@ -1,8 +1,17 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import DashHead from '../select/DashHead';
+import axios from 'axios';
+import {Link} from '@reach/router';
 import './ops.css';
 
 const Collaborate = (props) => {
+
+    const [collab, setCollab] = useState({});
+
+    useEffect(() => {
+        axios.get(`http://localhost:8000/api/user`)
+            .then(res => setCollab(res.data))
+    }, [])
 
     return (
         <div>
@@ -15,53 +24,53 @@ const Collaborate = (props) => {
                     <th>Short Description</th>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Rhinos Point</td>
+                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
             </table>

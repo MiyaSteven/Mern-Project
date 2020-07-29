@@ -13,6 +13,9 @@ import Collaborate from './components/ops/Collaborate';
 import Business from './components/ops/Business';
 import UpdateForm from './views/edit/UpdateForm';
 import CollabForm from './components/forms/CollabForm';
+import Collab from './views/collab/Collab';
+import JobForm from './components/forms/JobForm';
+import Jobs from './views/job/Jobs';
 
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
         <Profile path="users/:id"/>
         <UpdateForm path="/users/1/edit"/>
         <CollabForm path="/users/1/create/collab"/>
+        <Collab path="/collaborate/:id"/>
+        <JobForm path="/users/:id/create/job"/>
+        <Jobs path="/business/:id"/>
       </Router>
     </div>
   );

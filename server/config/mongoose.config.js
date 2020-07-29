@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose");mongoose.set('useCreateIndex', true);
 
 module.exports = (db_name) => {
   mongoose

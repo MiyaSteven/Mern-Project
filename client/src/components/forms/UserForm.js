@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import FormHead from "../select/FormHead";
 import axios from "axios";
 import { navigate, Link } from "@reach/router";
-import { TheForm, FillLabel, FormGroup, MainInput, RoundedBtn } from './Styles';
+import { TheForm, FillLabel, FormGroup, MainInput, RoundedBtn } from "./Styles";
 
 const UserForm = (props) => {
   const [firstName, setFirstName] = useState("");
@@ -13,6 +13,7 @@ const UserForm = (props) => {
   const [location, setLocation] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [errors, setErrors] = useState({});
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,6 +21,7 @@ const UserForm = (props) => {
     const newUser = {
       firstName,
       lastName,
+      company,
       phoneNumber,
       email,
       location,
@@ -28,12 +30,25 @@ const UserForm = (props) => {
     };
 
     axios
-      .post("http://localhost:8000/users", newUser)
+      .post("http://localhost:8000/users", newUser, {
+        withCredentials: true,
+      })
       .then((res) => {
+        console.log(res);
         navigate("/users");
+        setFirstName("");
+        setLastName("");
+        setCompany("");
+        setPhoneNumber("");
+        setEmail("");
+        setLocation("");
+        setPassword("");
+        setConfirmPassword("");
       })
       .catch((err) => {
         console.error(err);
+
+        setErrors(err.res.data.errors);
       });
   };
 

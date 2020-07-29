@@ -8,7 +8,6 @@ const UserSchema = new mongoose.Schema(
   {
     accountType: {
       type: String,
-      // personal and business
       required: [true, "You must select Personal or Business Account"],
     },
     firstName: {

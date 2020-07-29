@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import DashHead from '../select/DashHead';
+import axios from 'axios';
 import {Link} from '@reach/router';
 import './ops.css';
 
 const Collaborate = (props) => {
+
+    const [collab, setCollab] = useState({});
+
+    useEffect(() => {
+        axios.get(`http://localhost:8000/api/user`)
+            .then(res => setCollab(res.data))
+    }, [])
 
     return (
         <div>

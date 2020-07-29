@@ -11,7 +11,7 @@ const Profile = (props) => {
     useEffect(() => {
         axios.get(`http:localhost:8000/api/users/${props.id}`)
         .then(res => setUser(res.data))
-    })
+    }, [])
 
     return (
         <div className="profile">

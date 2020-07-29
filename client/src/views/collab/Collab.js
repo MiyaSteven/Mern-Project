@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from '@reach/router';
+import axios from 'axios';
 import './collab.css';
 
 const Collab =(props) => {
+
+    const [collab, setCollab] = useState({});
+
+    useEffect(() => {
+        axios.get(`http://localhost:8000/api/????`)
+        .then(res => setCollab(res.data))
+    }, []);
 
     return (
         <div className="collab">

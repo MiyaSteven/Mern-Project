@@ -1,8 +1,8 @@
 const UserController = require("../controllers/user.controller");
 
 module.exports = (app) => {
-  app.post("/users", UserController.newUser);
-  app.get("/users", UserController.getGroup);
-  app.get("/users/:id", UserController.getUser);
-  app.delete("/users/:id", UserController.deleteUser);
+  app.post("/api/users", UserController.newUser);
+  app.get("/api/users", UserController.getGroup);
+  app.get("/api/users/:id", UserController.getUser);
+  app.delete("/api/users/:id", UserController.deleteUser);
 };

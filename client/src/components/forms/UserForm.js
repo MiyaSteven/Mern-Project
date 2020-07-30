@@ -28,11 +28,10 @@ const UserForm = (props) => {
       password,
       confirmPassword,
     };
+    // console.log(newUser)
 
     axios
-      .post("http://localhost:8000/users", newUser, {
-        withCredentials: true,
-      })
+      .post("http://localhost:8000/api/users", newUser )
       .then((res) => {
         console.log(res);
         navigate("/users");
@@ -48,7 +47,7 @@ const UserForm = (props) => {
       .catch((err) => {
         console.error(err);
 
-        setErrors(err.res.data.errors);
+        // setErrors(err.res.data.errors);
       });
   };
 

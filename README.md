@@ -25,3 +25,5 @@ Now to test, make sure you have 2 unique terminal windows open
 9. In terminal window 2, cd into the react client folder
 
 - type nodemon - in your browser, go to url localhost:3000 and you should see the homepage
+
+Adding something to create a branch for Daniel

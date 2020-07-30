@@ -8,7 +8,7 @@ const UserSchema = new mongoose.Schema(
   {
     accountType: {
       type: String,
-      required: [true, "You must select Personal or Business Account"],
+      // required: [true, "You must select Personal or Business Account"],
     },
     firstName: {
       type: String,
@@ -46,25 +46,26 @@ const UserSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// Pre
-UserSchema.pre("validate", function (next) {
-  if (this.password !== this.confirmPassword) {
-    this.invalidate("confirmPassword", "Password must match confirm password");
-  }
-  next();
-});
-
-UserSchema.pre("save", function (next) {
-  bcrypt.hash(this.password, 10).then((hash) => {
-    this.password = hash;
-    next();
-  });
-});
-
 // Virtuals
-UserSchema.virtual("confirmPassword")
-  .get(() => this._confirmPassword)
-  .set((value) => (this._confirmPassword = value));
+// UserSchema.virtual("confirmPassword")
+//   .get(() => this._confirmPassword)
+//   .set((value) => (this._confirmPassword = value));
+// // Pre
+// UserSchema.pre("validate", function (next) {
+//   if (this.password !== this.confirmPassword) {
+//     this.invalidate("confirmPassword", "Password must match confirm password");
+//   }
+//   next();
+// });
+
+// UserSchema.pre("save", function (next) {
+//   bcrypt.hash(this.password, 10).then((hash) => {
+//     this.password = hash;
+//     next();
+//   });
+// });
+
+
 
 const User = mongoose.model("User", UserSchema);
 

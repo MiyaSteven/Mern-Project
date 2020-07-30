@@ -9,7 +9,7 @@ const NavBar = (props) => {
 
     return (
         <header>
-            <div class="topnav">
+            <div className="topnav">
                 <div>
                     <Link to="/users/create"><h2>Create User</h2></Link>
                 </div>

@@ -1,16 +1,19 @@
 // contains the functions that will be executed when the corresponding route URL is visited
 const User = require("../models/user.model");
 
+
+
 module.exports = {
   newUser: function (req, res) {
+    console.log("request body", req.body)
     User.create(req.body)
       .then((user) => {
         res.json(user);
+        console.log("Added User to User Database");
       })
       .catch((err) => {
         res.status(400).json(err);
       });
-    console.log("Added User to User Database");
   },
 
   getGroup(req, res) {

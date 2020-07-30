@@ -20,7 +20,7 @@ const Profile = (props) => {
             <h1>{users.firstName} {users.lastName} </h1>
             <img src="https://i.pinimg.com/originals/2f/59/f1/2f59f17586bc76ec69071cd3672cdc4d.png" alt=""/>
             <h3>Skills</h3>
-            <p>React, Javascript, Html, css, Python, Node.js, AWS</p>
+            <p>{users.skills}</p>
             <h3>Projects</h3>
             <p>React, Javascript, Html, css, Python, Node.js, AWS</p>
             <h3>Current Offers</h3>

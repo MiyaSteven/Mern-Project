@@ -34,7 +34,7 @@ const UserForm = (props) => {
       .post("http://localhost:8000/api/users", newUser )
       .then((res) => {
         console.log(res);
-        navigate("/users");
+        navigate("/");
         setFirstName("");
         setLastName("");
         setCompany("");

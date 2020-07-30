@@ -31,8 +31,8 @@ function App() {
         <BusinessForm path="/business/create"/>
         <LoginForm path="/login"/>
         <Profile path="users/:id"/>
-        <UpdateForm path="/users/1/edit"/>
-        <CollabForm path="/users/1/create/collab"/>
+        <UpdateForm path="/users/:id/edit"/>
+        <CollabForm path="/users/:id/create/collab"/>
         <Collab path="/collaborate/:id"/>
         <JobForm path="/users/:id/create/job"/>
         <Jobs path="/business/:id"/>

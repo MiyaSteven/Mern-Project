@@ -25,8 +25,6 @@ const Profile = (props) => {
             <p>React, Javascript, Html, css, Python, Node.js, AWS</p>
             <h3>Current Offers</h3>
             <p>React, Javascript, Html, css, Python, Node.js, AWS</p>
-            <h3>Offer Deadline</h3>
-            <p>12/12/12</p>
             <h3>Created Collaborations</h3>
             <Link className="troll" to="/collaborate/1">Rhinos Point</Link>
             <h3>Collaboration Contributions</h3>

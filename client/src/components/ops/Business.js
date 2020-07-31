@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import DashHead from '../select/DashHead';
 import {Link} from '@reach/router';
-import axios from 'axios';
+import axios from 'axios'
 import './ops.css';
 
 const Business = (props) => {
@@ -17,19 +17,19 @@ const Business = (props) => {
     return (
         <div>
             <DashHead/>
-            <h1>Business</h1>
+            <h1>Companies</h1>
             <table className="ops">
                 <tr>
                     <th>Company</th>
-                    <th>Job Title</th>
                     <th>Short Description</th>
+                    <th>Hiring?</th>
                 </tr>
                 {business.map((biz,idx) => {
                     return(
                         <tr key={idx}>
-                            <td><Link to={`/users/${biz._id}`}>{biz.company}</Link></td>
-                            <td><Link to="/business/1">React Developer</Link></td>
-                            <td>Creating a website about how sharp Rhinos Horns are and...</td>
+                            <td><Link to={`/business/${biz._id}`}>{biz.company}</Link></td>
+                            <td>{biz.about}</td>
+                            <td>Hiring</td>
                         </tr>
                     )
                 })}

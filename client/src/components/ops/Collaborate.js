@@ -29,7 +29,12 @@ const Collaborate = (props) => {
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/business/1">Apple</Link></td>
+                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
+                    <td>Creating a website about how sharp Rhinos Horns are and...</td>
+                </tr>
+                <tr>
+                    <td><Link to="/business/1">LinkedIn</Link></td>
                     <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
@@ -39,7 +44,7 @@ const Collaborate = (props) => {
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/business/1">Facebook</Link></td>
                     <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
@@ -49,7 +54,7 @@ const Collaborate = (props) => {
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/business/1">Alibaba</Link></td>
                     <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
@@ -59,12 +64,7 @@ const Collaborate = (props) => {
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>
                 <tr>
-                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
-                    <td><Link to="/collaborate/1">Rhinos Point</Link></td>
-                    <td>Creating a website about how sharp Rhinos Horns are and...</td>
-                </tr>
-                <tr>
-                    <td><Link to="/users/1">Alfreds Futterkiste</Link></td>
+                    <td><Link to="/business/1">Target</Link></td>
                     <td><Link to="/collaborate/1">Rhinos Point</Link></td>
                     <td>Creating a website about how sharp Rhinos Horns are and...</td>
                 </tr>

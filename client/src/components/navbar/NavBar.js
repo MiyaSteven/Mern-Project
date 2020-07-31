@@ -16,9 +16,6 @@ const NavBar = (props) => {
                 <div>
                     <Link to="/"><h2>Dashboard</h2></Link>
                 </div>
-                <div>
-                    <Link to={`/users/1`}><h2>Profile</h2></Link>
-                </div>
             </div>
         </header>
     )

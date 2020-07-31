@@ -29,9 +29,9 @@ const BusinessForm = (props) => {
     };
 
     axios
-      .post("http://localhost:8000/users", newUser)
+      .post("http://localhost:8000/api/business", newUser)
       .then((res) => {
-        navigate("/users");
+        navigate("/business");
       })
       .catch((err) => {
         console.error(err);

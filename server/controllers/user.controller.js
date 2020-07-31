@@ -26,6 +26,7 @@ module.exports = {
       });
   },
 
+
   getUser(req, res) {
     User.findById({ _id: req.params.id })
       .then((user) => {
@@ -43,6 +44,15 @@ module.exports = {
       })
       .catch((err) => {
         res.json(err);
+      });
+  },
+  updateUser(req, res) {
+    User.findByIdAndUpdate(req.params.id, req.body)
+      .then((user) => {
+        res.json(user);
+      })
+      .catch((err) => {
+        res.status(400).json(err);
       });
   },
 };

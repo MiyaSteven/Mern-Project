@@ -31,7 +31,6 @@ const Profile = (props) => {
             <Link className="troll" to="/collaborate/1">Rhinos Point</Link><br/><br/><br/>
             <Link className="bro" to={`/users/${users._id}/edit`}>Edit</Link><br/><br/><br/>
             <Link className="bro" to="/users/1/create/collab">Create Collab</Link><br/><br/><br/>
-            <Link className="bro" to="/users/1/create/job">Create Job</Link>
             <ReviewForm/>
             <div className="reviews">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio delectus reprehenderit hic necessitatibus magni! Assumenda voluptatum, amet temporibus autem deserunt eius, incidunt voluptas maiores tempore, nisi quod officia omnis!</p>

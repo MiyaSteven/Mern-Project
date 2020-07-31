@@ -10,8 +10,9 @@ const DashHead = (props) => {
             <h1>Dashboard</h1>
             <hr/>
             <Link to="/">Users</Link>
+            <Link to="/business">Companies</Link>
             <Link to="/collaborate">Colloborate</Link>
-            <Link to="/business">Jobs</Link>
+            <Link to="/jobs">Jobs</Link>
             <hr/>
         </div>
     )

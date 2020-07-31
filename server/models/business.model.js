@@ -38,7 +38,7 @@ const BusinessSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    skills: {
+    about: {
       type: String,
     },
   },

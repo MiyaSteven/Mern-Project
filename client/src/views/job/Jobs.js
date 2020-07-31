@@ -15,7 +15,7 @@ const Jobs =(props) => {
     return (
         <div className="jobs">
             <h1>Software Engineer</h1>
-            <h3>created by: <Link to="/users/1">Apple</Link></h3>
+            <h3>created by: <Link to="/business/1">Apple</Link></h3>
             <hr/>
             <h4>Job Desciption</h4>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum pariatur nihil porro voluptatibus officia perspiciatis modi eveniet aperiam dolor odit, reiciendis perferendis, asperiores fugiat quisquam dolores labore voluptates repellat sint!</p>
